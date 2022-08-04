@@ -1,0 +1,14 @@
+body > div.title-container {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 1.7em;
+   font-weight: 600;
+   color: black;
+}
+
+body > div.title-container > div.title-character {
+    display: inline-block;
+    color: black;
+}
