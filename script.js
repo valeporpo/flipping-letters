@@ -20,10 +20,8 @@ let animate = setInterval(function() {
 function changeColor(index) {
   let currentColor = letters[index].style.color
   if(currentColor == 'black')
-    letters[index].style.color = 'blue'
-  else if(currentColor == 'blue')
-    letters[index].style.color = 'red'
-  else
+    letters[index].style.color = 'rgb(8, 63, 184)'
+  else if(currentColor == 'rgb(8, 63, 184)')
     letters[index].style.color = 'black' 
 }
 
