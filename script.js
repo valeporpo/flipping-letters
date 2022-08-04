@@ -10,7 +10,7 @@ let animate = setInterval(function() {
       newDegree = degree + 1
       letters[currentIndex].style.transform = 'rotateY(' + newDegree + 'deg)'
     } else {
-      newDegree = 1
+      newDegree = 0
       letters[currentIndex].style.transform = 'rotateY(' + newDegree + 'deg)'
       if(currentIndex == letters.length-1)
         currentIndex = 0
