@@ -8,14 +8,11 @@ let animate = setInterval(function() {
       changeColor(currentIndex)
     if(degree < 360) {
       newDegree = degree + 1
-      letters[currentIndex].style.transform = 'rotateY(' + newDegree + 'deg)'
+      changeRotation(currentIndex, newDegree)
     } else {
       newDegree = 0
-      letters[currentIndex].style.transform = 'rotateY(' + newDegree + 'deg)'
-      if(currentIndex == letters.length-1)
-        currentIndex = 0
-      else
-        currentIndex++
+      changeRotation(currentIndex, newDegree)
+      currentIndex = changeLetter(currentIndex)
     }
     
 }, 1)
@@ -28,4 +25,13 @@ function changeColor(index) {
     letters[index].style.color = 'red'
   else
     letters[index].style.color = 'black' 
+}
+
+function changeRotation(letterIndex, degree) {
+  letters[letterIndex].style.transform = 'rotateY(' + degree + 'deg)'
+}
+
+function changeLetter(index) {
+  newIndex = (index == letters.length-1) ? 0 : index + 1
+  return newIndex
 }
