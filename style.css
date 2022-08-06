@@ -11,23 +11,25 @@ body > div.title-container > div.title-character {
     display: inline-block;
 }
 
-@media only screen and (max-width: 254px) {
+@media only screen and (max-width: 274px) {
     body > div.title-container {
         font-size: calc(6px + 3.5vw);
     } 
 }
 
-@media only screen and (min-width: 319px) and (max-width: 381px) {
+@media only screen and (min-width: 275px) and (max-width: 338px) {
+    body > div.title-container {
+        font-size: calc(8px + 3.5vw);
+    } 
+}
+
+@media only screen and (min-width: 339px) and (max-width: 401px) {
     body > div.title-container {
         font-size: calc(10px + 3.5vw);
     } 
 }
 
-@media only screen and (min-width: 255px) and (max-width: 318px) {
-    body > div.title-container {
-        font-size: calc(8px + 3.5vw);
-    } 
-}
+
 /*
 @media only screen and (min-width: 289px) and (max-width: 313px) {
     body > div.title-container {
